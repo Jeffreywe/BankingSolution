@@ -7,6 +7,14 @@ namespace BankingProject
     {
         static void Main(string[] args) 
         {
+
+            Savings sav1 = new Savings();
+            sav1.Deposit(100);
+            sav1.CalculateAndPayInterest(1);
+            sav1.CalculateAndPayInterest(1);
+            sav1.Debug();
+
+            //comment out down below for sav1 debug view
             // an instance of an account
             Account acct1 = new Account(); // new creates a constructor, new instance of an account
             acct1.Deposit(500); // gives an amount to Deposit method
